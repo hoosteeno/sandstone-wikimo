@@ -1,0 +1,15 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="sandstone-theme/sandstone-theme.html" />
+
+    <before css:theme="header" css:content="#skip" />
+
+    <replace css:theme="title" css:content="title" />
+
+    <replace css:theme="#header" css:content="#header" />
+    <replace css:theme="#content" css:content="#main" />
+
+</rules>
