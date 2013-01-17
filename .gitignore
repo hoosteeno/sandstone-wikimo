@@ -7,3 +7,4 @@ venv
 bin
 eggs
 .installed*
+parts
