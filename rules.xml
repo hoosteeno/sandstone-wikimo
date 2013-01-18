@@ -5,11 +5,24 @@
 
     <theme href="sandstone-theme/sandstone-theme.html" />
 
-    <before css:theme="header" css:content="#skip" />
+    <!-- we may not want to drop these but they're hidden in wiki so dropping them now -->
+    <drop css:content="#siteSub" />
+    <drop css:content=".printfooter" />
+
+    <replace css:theme="#scripts" css:content="script" />
+
+    <after css:theme="#masthead" css:content="#skip" />
 
     <replace css:theme="title" css:content="title" />
 
     <replace css:theme="#header" css:content="#header" />
-    <replace css:theme="#content" css:content="#main" />
+
+    <merge attributes="class" css:theme="#main-content" css:content="#main" />
+
+    <merge attributes="class" css:theme="#sidebar" css:content="#wiki-tools" />
+    <replace css:theme-children="#sidebar" css:content-children="#wiki-tools" />
+
+    <merge attributes="class" css:theme="#main-column" css:content="#main-content" />
+    <replace css:theme-children="#main-column" css:content-children="#main-content" />
 
 </rules>

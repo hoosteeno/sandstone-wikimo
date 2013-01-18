@@ -1,12 +1,73 @@
 <html>
     <head>
         <title>MozillaWiki</title>
-        <link rel="stylesheet" href="./sandstone-theme.css" />
+        <link rel="stylesheet" href="./sandstone-resp.less.css" />
+        <link rel="stylesheet" href="./wikimo.css" />
+        <link href="//www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet" />
+        <script id="scripts"></script>
     </head>
-    <body>
-        <div id="header"></div>
-        <div id="content">
-          <h2>Uh oh, something is wrong. Please file a bug.</h2>
+    <body class="html-ltr sand">
+      <div id="outer-wrapper">
+        <div id="wrapper">
+
+          <header id="masthead">
+            <a href="http://www.mozilla.org/" id="tabzilla">Mozilla</a>
+
+            <nav id="nav-main" role="navigation">
+              <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
+              <ul id="nav-main-menu">
+                <li class="first"><a href="/en-US/mission/">Mission</a></li>
+                <li><a href="/en-US/about/">About</a></li>
+                <li><a href="/en-US/products/">Products</a></li>
+                <li class="last"><a href="/en-US/contribute/">Get Involved</a></li>
+              </ul>
+            </nav>
+          
+            <h2><a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/header-mozilla-stone.png" alt="mozilla"></a></h2>
+
+          </header>
+
+          <div id="main-content">
+            <div class="row">
+              <article id="main-column" class="main-column">Gets #main-content children</article>
+              <div id="sidebar" class="sidebar">Gets #wiki-tools children</div>
+            </div><!-- .row -->
+          </div><!-- #main-content -->
+
+        </div><!-- #wrapper -->
+
+
+        <footer id="colophon">
+          <div class="row">
+            <div class="footer-logo">
+                <a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+            </div>
+
+            <div class="footer-license">
+                <p>
+                  Portions of this content are &copy;1998&ndash;2013 by individual mozilla.org contributors. Content available under a <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>.              </p>
+                <p>
+                  <a href="//www.mozilla.org/en-US/contribute/page/">Contribute to this page</a>
+                </p>
+            </div>
+
+            <ul class="footer-nav">
+              <li><a href="//www.mozilla.org/en-US/about/contact.html#map-mountain_view">Contact Us</a></li>
+              <li><a href="//www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
+              <li><a href="//www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
+              <li><a href="//www.mozilla.org/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+            </ul>
+
+            <ul class="footer-nav">
+              <li><a href="http://twitter.com/firefox">Twitter</a></li>
+              <li><a href="http://facebook.com/Firefox">Facebook</a></li>
+              <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+            </ul>
         </div>
+      </footer>
+
+      </div><!-- #outer-wrapper -->
+          
+      <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script>
     </body>
 </html>

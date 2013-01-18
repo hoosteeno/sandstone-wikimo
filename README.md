@@ -14,3 +14,8 @@ install
     python bootstrap.py 
 
     bin/buildout 
+
+run (in dev)
+============
+
+    bin/paster serve --reload proxy.ini
